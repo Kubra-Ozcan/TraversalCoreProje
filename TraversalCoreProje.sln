@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraversalCoreProje", "Trave
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{6C9AB55E-A16F-4EAE-B629-0384830226DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAAccessLayer", "DataAAccessLayer\DataAAccessLayer.csproj", "{A33B0D75-2BF5-4736-9D51-C011768F897D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAAccessLayer\DataAccessLayer.csproj", "{A33B0D75-2BF5-4736-9D51-C011768F897D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{4B1F8977-8AC5-4A5A-82E2-6A21E8353FE5}"
 EndProject
