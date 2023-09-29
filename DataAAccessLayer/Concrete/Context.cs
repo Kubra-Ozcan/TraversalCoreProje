@@ -1,4 +1,5 @@
 ﻿using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,13 +9,12 @@ using System.Threading.Tasks;
 
 namespace DataAAccessLayer.Concrete
 {
-    public class Context : DbContext
+
+    public class Context : IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("server= LAPTOP-CH16DCVB\\SQLEXPRESS01; database=TraversalDB;integrated security=true;");
-
-
 
         }
 
@@ -30,5 +30,6 @@ namespace DataAAccessLayer.Concrete
         public DbSet<Newsletter> Newsletters { get; set; }
         public DbSet<SubAbout> SubAbouts { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Comment> Comments{ get; set; }
     }
 }
