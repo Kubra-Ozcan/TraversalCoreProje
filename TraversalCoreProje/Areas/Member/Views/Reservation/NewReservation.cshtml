@@ -1,0 +1,38 @@
+﻿@model EntityLayer.Concrete.Reservation
+
+@{
+    ViewData["Title"] = "NewReservation";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Yeni Rezervasyon Sayfası </h1>
+
+
+<form method="post">
+    <div>
+        @Html.Label("Lokasyon")
+        @Html.DropDownListFor(x => x.Destination, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+    </div>
+
+    <div>
+        @Html.Label("Kişi Sayısı")
+        <input type="text" asp-for="PersonCount" class="form-control" />
+    </div>
+
+    <div>
+        @Html.Label("Tarih")
+        <input type="date" asp-for="ReservationDate" class="form-control" />
+    </div>
+    <div>
+        @Html.Label("Varsa eklemek istedikleriniz")
+        <input type="text" asp-for="Description" class="form-control" />
+    </div>
+    <br />
+    <br />
+    <br />
+    @*//<button class="btn btn-outline-success"> Rezervasyon Yap</button>*@
+    <button class="btn btn-sm btn-outline-dark" 
+            onclick="alert('Rezervasyonunuz başlangıçta onay bekliyor şeklinde alınacaktır.Rezervasyon onaylanma süreci için güncel rezervasyonlarım menüsününden rezervasyonlarınızı takip etmeyi unutmayın');">
+            Rezervasyon Oluştur</button>
+
+</form>

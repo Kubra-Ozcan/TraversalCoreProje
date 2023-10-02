@@ -16,5 +16,9 @@ namespace EntityLayer.Concrete
         public string Gender { get; set; }
         //[NotMapped]
         //public string ConfirmPassword { get; set; }
+        public List<Reservation> Revervations { get; set; }
+
+
+
     }
 }
